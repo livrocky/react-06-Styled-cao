@@ -1,5 +1,11 @@
+import BillsList from '../components/Table';
+
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return (
+    <div>
+      <BillsList />
+    </div>
+  );
 };
 
 export default HomePage;
