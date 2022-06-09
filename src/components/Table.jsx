@@ -14,13 +14,23 @@ function BillsList() {
   });
   return (
     <div className='display'>
-      <h1>Bills List</h1>
+      <h1 className='title'>Bills List</h1>
       {billsArray.length === 0 && <h2>Loading Bills ...</h2>}
       {billsArray.map((bObj) => (
-        <div key={bObj.id} className='bill'>
-          <p className='people'>Number of people: {bObj.people}</p>
-          <h2 className='price'>Price: {bObj.price} </h2>
-        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Bill id</th>
+              <th>Number of People</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>{bObj.id}</td>
+            <td>{bObj.people}</td>
+            <td>{bObj.price}</td>
+          </tr>
+        </table>
       ))}
     </div>
   );
