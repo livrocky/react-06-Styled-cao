@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { BillsTitle } from './TableStyled';
 
 function BillsList() {
   //   console.log('BillsList ran ===');
@@ -14,8 +15,8 @@ function BillsList() {
     getBills();
   });
   return (
-    <div className='display'>
-      <h1 className='title'>Bills List</h1>
+    <div>
+      <BillsTitle>Bills List</BillsTitle>
       <table>
         <thead>
           <tr>

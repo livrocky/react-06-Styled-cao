@@ -1,4 +1,4 @@
-import BillsList from '../../components/Table';
+import BillsList from '../../components/TableStyled/Table';
 
 const HomePage = () => {
   return (
