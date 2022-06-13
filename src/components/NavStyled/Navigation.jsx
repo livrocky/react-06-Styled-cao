@@ -1,15 +1,15 @@
 // import { Link } from 'react-router-dom';
 
-import { Link } from './NavStyled';
+import { Header, Link, MainNav } from './NavStyled';
 
 const Navigation = () => {
   return (
-    <header>
-      <nav className='main-nav'>
+    <Header>
+      <MainNav>
         <Link href='/home'>Home</Link>
         <Link href='/add'>Add</Link>
-      </nav>
-    </header>
+      </MainNav>
+    </Header>
   );
 };
 

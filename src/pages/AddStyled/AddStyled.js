@@ -14,3 +14,7 @@ export const AddForm = styled.form`
   display: flex;
   align-items: center;
 `;
+
+export const Title = styled.h1`
+  text-align: center;
+`;

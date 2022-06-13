@@ -1,9 +1,9 @@
-import { AddContainer, AddForm } from './AddStyled';
+import { AddContainer, AddForm, Title } from './AddStyled';
 
 const AddPage = () => {
   return (
     <AddContainer>
-      <h1 className='title'>Add Bill</h1>
+      <Title>Title</Title>
       <AddForm>
         <label>Enter Number of People:</label>
         <input type='number' placeholder='Number of People' />
