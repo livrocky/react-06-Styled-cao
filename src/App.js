@@ -1,8 +1,8 @@
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import Navigation from './components/NavStyled/Navigation';
-import AddPage from './pages/Add';
-import HomePage from './pages/Home';
+import AddPage from './pages/AddStyled/Add';
+import HomePage from './pages/HomeStyled/Home';
 
 function App() {
   return (

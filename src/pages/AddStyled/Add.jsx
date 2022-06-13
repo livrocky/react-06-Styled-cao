@@ -1,15 +1,17 @@
+import { AddContainer, AddForm } from './AddStyled';
+
 const AddPage = () => {
   return (
-    <div>
-      <h1 className='title'>AddPage</h1>
-      <form className='add-form'>
+    <AddContainer>
+      <h1 className='title'>Add Bill</h1>
+      <AddForm>
         <label>Enter Number of People:</label>
         <input type='number' placeholder='Number of People' />
         <label>Enter the price</label>
         <input type='number' placeholder='Price Amount' />
         <button>Add</button>
-      </form>
-    </div>
+      </AddForm>
+    </AddContainer>
   );
 };
 
