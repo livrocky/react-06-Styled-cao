@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { BillsTitle } from './TableStyled';
+import { BillsTitle, BillTable } from './TableStyled';
 
 function BillsList() {
   //   console.log('BillsList ran ===');
@@ -17,7 +17,7 @@ function BillsList() {
   return (
     <div>
       <BillsTitle>Bills List</BillsTitle>
-      <table>
+      <BillTable>
         <thead>
           <tr>
             <th>Bill id</th>
@@ -33,7 +33,7 @@ function BillsList() {
             <td>{bObj.price}</td>
           </tr>
         ))}
-      </table>
+      </BillTable>
     </div>
   );
 }
